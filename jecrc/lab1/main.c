@@ -84,5 +84,5 @@ void main(){
     q = a/10;
     r = a%10;
     rev = r*10 + q;
-    getch();
+    printf("rev is %d",rev);
 }
