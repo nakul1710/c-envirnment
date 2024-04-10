@@ -52,11 +52,25 @@
 // }
 
 //write a C programme to calculate the area of the circle.
-#include <stdio.h>
-void main(){
-    float r,area;
-    printf("Enter r = ");
-    scanf("%f",&r);
-    area = 3.14*r*r;
-    printf("The area of the circle is %f\n", area);
-}
+// #include <stdio.h>
+// void main(){
+//     float r,area;
+//     printf("Enter r = ");
+//     scanf("%f",&r);
+//     area = 3.14*r*r;
+//     printf("The area of the circle is %f\n", area);
+// }
+
+//Write a c program to swap two variables 
+//  #include <stdio.h>
+//  void main(){
+//  int a, b, temp;
+//  printf("Enter a = ");
+//  scanf("%d",&a);
+//  printf("Enter b = ");
+//  scanf("%d",&b);
+//  temp = a;
+//  a = b;
+//  b = temp;
+//  printf("After swaping \n a = %d\n b =%d\n",a,b);
+// }
