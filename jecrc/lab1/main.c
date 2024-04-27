@@ -76,13 +76,13 @@
 // }
 
 //Write a C program to print reverse of the  number.
-#include <stdio.h>
-void main(){
-    int a,q,r,rev ;
-    printf("Enter Number = ");
-    scanf("%d",&a);
-    q = a/10;
-    r = a%10;
-    rev = r*10 + q;
-    printf("rev is %d",rev);
-}
+// #include <stdio.h>
+// void main(){
+//     int a,q,r,rev ;
+//     printf("Enter Number = ");
+//     scanf("%d",&a);
+//     q = a/10;
+//     r = a%10;
+//     rev = r*10 + q;
+//     printf("rev is %d",rev);
+// }
