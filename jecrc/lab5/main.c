@@ -234,23 +234,80 @@
 // }
 
 
+// #include <stdio.h>
+
+// int fact(int a);
+
+// int main() {
+//     int a, r;
+//     printf("Enter a number: ");
+//     scanf("%d", &a);
+//     r = fact(a);
+//     printf("The factorial of %d is: %d\n", a, r);
+//     return 0;
+// }
+
+// int fact(int a) {
+//     int i, r = 1;
+//     for(i = a; i > 0; i--) {
+//         r *= i;
+//     }
+//     return r;
+// }
+
+
+// #include<stdio.h>
+// int main(){
+//     int n;
+//     long int sum(int);
+//     long int res;
+//     printf("Enter the number:");
+//     scnaf("%d",&n);
+//     res = sum(n);
+//     printf("The sum of %d =  %ld",n,res);
+//     getch();
+// }
+// long int sum(int x){
+// if(x == 1)
+//     return 1;
+
+// else 
+// return x + sum(x-1);
+// }
+
+// #include<stdio.h>
+// int main(){
+//     int x = 10,p;
+//     int *p1;
+//     p = &x;
+//     printf("The address of x: %p\n",&x);
+//     printf("The value of x: %d\n",x);
+//     printf("The address of p1: %p\n",&p1);
+//     printf("The address of x: %p\n",p1);
+//     // printf("Add value of x:%d\n" *p1);
+// }
+// #include<stdio.h>
+// int main(){
+//     FILE *fp;
+//     fp = fopen("file.txt","w");
+//     fprintf(fp , "%s","This is just an example");
+//     fclose(fp);
+   
+//     return 0;
+// }
+
 #include <stdio.h>
-
-int fact(int a);
-
 int main() {
-    int a, r;
-    printf("Enter a number: ");
-    scanf("%d", &a);
-    r = fact(a);
-    printf("The factorial of %d is: %d\n", a, r);
-    return 0;
-}
-
-int fact(int a) {
-    int i, r = 1;
-    for(i = a; i > 0; i--) {
-        r *= i;
+    char name[40];
+    int rollno;
+    FILE *fp1;
+    fp1 = fopen("james.txt", "r");
+    if (fp1 == NULL) {
+        printf("Error opening the file!\n");
+        return 1;
     }
-    return r;
+    fscanf(fp1, "%s %d", name, &rollno);
+    printf("The name and roll number: %s %d\n", name, rollno);
+    fclose(fp1);
+    return 0;
 }
