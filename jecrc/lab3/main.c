@@ -140,30 +140,30 @@
 // }
 
 
-// #include<stdio.h>
-// #include<math.h>
-// int main(){
-//     int num,originalNum,remainder, sum = 0,n = 0;
-//     printf("Enter the number: "); 
-//     scanf("%d",&num);
-//     originalNum = num;
-//    while(originalNum>0){
-//    originalNum /= 10;
-//    n++;
-//    }
-//   originalNum = num;
-//     while(num>0){
-//         remainder = num%10;
-//         sum += pow(remainder,3);
-//         num = num/10;
-//         originalNum /= 10;
-//     }
-//     originalNum = num;
-//     if(sum == num){
-//          printf("%d is an Armstrong number.\n", num);
-//     }
-//     else{
-//         printf("%d is not an Armstrong number.\n", num);
-//     }
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int num,originalNum,remainder, sum = 0,n = 0;
+    printf("Enter the number: "); 
+    scanf("%d",&num);
+    originalNum = num;
+   while(originalNum>0){
+   originalNum /= 10;
+   n++;
+   }
+  originalNum = num;
+    while(num>0){
+        remainder = num%10;
+        sum += pow(remainder,3);
+        num = num/10;
+        originalNum /= 10;
+    }
+    num = originalNum;
+    if(sum == num){
+         printf("%d is an Armstrong number.\n", originalNum);
+    }
+    else{
+        printf("%d is not an Armstrong number.\n", originalNum);
+    }
 
-// }   
+}   
